@@ -1,0 +1,4057 @@
+﻿* {
+    
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+   /* font-family: 'changa', cursive; */ 
+    font-weight: bold;
+    user-select: none;
+    outline:none;
+}
+
+/* Start of Starting Page of the Application */
+
+/* Start Navbar */
+
+
+#load-screen {
+    background-color:#333;
+    color:#FFF;
+    height:1500px;
+    z-index:20;
+    position:fixed;
+    width:100%;
+    top:0;
+    transition:all 4s linear;
+}
+
+#loading {
+    position:relative;
+    width:100px;
+    height:100px;
+    margin:200px auto;
+    color:#FFF;
+    border-radius: 50%;
+    border:2px solid rgba(28, 112, 180, 0.93);
+    border-top:2px solid #333;
+    animation: loader 3.5s linear infinite alternate;
+
+}
+
+@keyframes loader {
+ 25% {
+    transform:rotate(70deg);
+ }
+}
+
+
+#load-screen section:first-of-type {
+    position:absolute;
+    top:8px;
+    left:9px;
+    bottom:0;
+    width:80px;
+    height:80px;
+    border:1px solid #F00;
+    border-top:1px solid #333;
+    border-radius:50%;
+    animation:loaders 6.5s ease-out infinite alternate;
+
+}
+
+@keyframes loaders {
+    25% {
+        transform:rotate(360deg);
+    }
+   }
+
+
+
+
+
+
+   #load-screen section:last-of-type {
+    position:absolute;
+    top:15px;
+    left:17px;
+    bottom:0;
+    
+    width:65px;
+    height:65px;
+    border:1px solid #FFE100;
+    border-top:1px solid #333;
+    border-radius:50%;
+    animation:loaderss 6.5s  ease-in infinite alternate;
+
+}
+
+@keyframes loaderss {
+    25% {
+        transform:rotate(120deg);
+    }
+   }
+
+ 
+
+
+
+
+
+nav {           /* this is upper place in JS File */
+    
+    
+    background-color:#333;
+    color:#FFF;
+    text-align:center;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+nav h1 {
+    
+    width:70%;
+    margin:0 auto;
+
+}
+
+
+nav #back-button {
+    float:left;
+    margin-top:-40px;
+    color:#FFF;
+    background:none;
+    border:none;
+}
+
+
+nav p {
+    
+    width:100%;
+    margin:10px auto;
+    background-color:#F00;
+    border-radius: 10px;
+    font-size:15px;
+}
+
+
+
+
+
+
+/* End Navbar */
+
+
+
+/* Start bottom place */
+
+
+
+#bottom-place {         /* this is the main buttons of the application */
+    position:relative;
+    background-color:#333;
+    background: url('../imgs/cairo.JPG') no-repeat center center fixed;
+    background-size: cover;
+    min-height:calc(100vh - 80px);
+    z-index:0;
+    width:100%;
+}
+
+
+
+.bottom-opacity { 
+    
+    z-index:-1;
+    position: absolute;
+    left:0;
+    bottom:0;
+    top:0;
+    right:0;
+    background-color:rgba(0, 0, 0, .5);
+    
+}
+
+#bottom-place button {
+    
+    float: left;
+    padding: 15px 15px;
+    width: 100%;
+    margin:20px auto;
+    border-radius: 10px;
+    background-color:rgba(181, 143, 219, 0.49);
+    border: 1px solid rgba(181, 143, 219, 0.67);
+    color: #fff;
+    transition: all .2s ease-in-out;
+}
+
+
+#bottom-place button:first-of-type {
+    margin-top:25px;
+}
+
+#bottom-place button:hover {
+    background-color:#333;
+    color: rgba(181, 143, 219, 0.67);
+}
+
+#bottom-place button:active {
+    background-color:#333;
+    color: rgba(181, 143, 219, 0.67);
+}
+
+/* End bottom place */
+
+
+
+
+
+
+
+
+
+/* start faculties buttons */
+
+
+
+#faculties-buttons {        /* this is the containr that holds the buttons of faculties */
+    position:relative;
+    background: url('../imgs/cairo.JPG') no-repeat center center fixed;
+    background-size: cover;
+    width:100%;
+    min-height:calc(100vh - 80px);
+    z-index:0;
+    
+}
+
+#faculties-opacity {
+    min-height:calc(100vh - 80px);
+    background-color:rgba(0, 0, 0, .5);
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+}
+
+#faculties-buttons  button {
+    width:100%;
+    padding:10px 15px;
+    margin-top:20px;
+    margin-bottom: 15px;
+    background-color:rgba(128, 107, 107, 0.94);
+    border:none;
+    color:#FFF;
+    border-radius: 5px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start faculties content */
+
+
+#engineering-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+    
+}
+
+#engineering-content header {
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+    text-align:center;
+}
+
+#engineering-content header h1 {
+    
+    
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#engineering-content header #eng-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+
+#engineering-content p {
+    color:#FFF;
+    margin-top:100px;
+    float:right;
+}
+
+
+
+
+
+
+
+
+/* -------- */
+
+
+#medicine-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#medicine-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#medicine-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#medicine-content header #medicine-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#medicine-content p {
+    margin-top:100px;
+    color:#FFF;
+    float:right;
+}
+
+
+
+
+
+
+
+
+/* -------- */
+
+#oral-dental-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#oral-dental-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#oral-dental-content header h1 {
+    
+    font-size:25px;
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#oral-dental-content header #oral-dental-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#oral-dental-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+/* -------- */
+
+
+
+#fci-content {
+    width:100%;
+    overflow:hidden;
+    display:none;
+    direction:rtl;
+    background-color:#333;
+}
+
+#fci-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#fci-content header h1 {
+    
+    font-size:25px;
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#fci-content header #fci-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+
+#fci-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+/* -------- */
+
+
+#pharmacy-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#pharmacy-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#pharmacy-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#pharmacy-content header #pharmacy-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+
+#pharmacy-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+
+/* -------- */
+
+
+#agriculture-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#agriculture-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#agriculture-content header h1 {
+    
+    
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#agriculture-content header #agriculture-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+
+#agriculture-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+/* -------- */
+
+#science-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#science-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#science-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#science-content header #science-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#science-content p {
+
+    color:#FFF;
+    margin-top: 100px;
+}
+
+
+
+/* -------- */
+
+#political-science-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#political-science-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#political-science-content header h1 {
+    font-size:19px; 
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#political-science-content header #political-science-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+
+#political-science-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+/* -------- */
+
+#mass-media-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#mass-media-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#mass-media-content header h1 {
+    
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#mass-media-content header #mass-media-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#mass-media-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+
+
+/* -------- */
+#kindergarten-content {
+    width:100%;
+    overflow:hidden;
+    direction: rtl;
+    background-color:#333;
+}
+
+#kindergarten-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#kindergarten-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#kindergarten-content header #kindergarten-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+
+#kindergarten-content p {
+
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+/* -------- */
+/* -------- */
+
+
+/* -------- */
+
+#archeology-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#archeology-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#archeology-content header h1 {
+
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#archeology-content header #archeology-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#archeology-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+/* -------- */
+
+#arts-content {
+    width:100%;
+    overflow:hidden;
+    direction: rtl;
+    background-color:#333;
+}
+
+#arts-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#arts-content header h1 {
+    
+ 
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#arts-content header #arts-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#arts-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+/* -------- */
+
+
+#commerce-content {
+    width:100%;
+    overflow:hidden;
+    direction: rtl;
+    background-color:#333;
+}
+
+#commerce-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+    
+}
+
+#commerce-content header h1 {
+    display: inline;
+    margin:10px auto;
+}
+
+
+#commerce-content header #commerce-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#commerce-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+/* -------- */
+
+#tarbianawia-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#tarbianawia-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#tarbianawia-content header h1 {
+    
+   
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#tarbianawia-content header #tarbianawia-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#tarbianawia-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+/* -------- */
+
+
+#nursing-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#nursing-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#nursing-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#nursing-content header #nursing-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#nursing-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+/* -------- */
+
+
+#law-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#law-content header {
+    text-align: center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#law-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#law-content header #law-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#law-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+/* -------- */
+
+#physical-content {
+    width:100%;
+    overflow:hidden;
+   direction:rtl;
+   background-color:#333;
+}
+
+#physical-content header {
+    text-align: center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#physical-content header h1 {
+    
+  
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#physical-content header #physical-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#physical-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+
+/* -------- */
+
+#vet-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#vet-content header {
+    text-align: center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#vet-content header h1 {
+    
+  
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#vet-content header #vet-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#vet-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+/* -------- */
+
+#dar-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#dar-content header {
+    text-align: center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#dar-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#dar-content header #dar-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#dar-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+/* -------- */
+
+#urban-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#urban-content header {
+    text-align: center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#urban-content header h1 {
+    font-size:15px;
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#urban-content header #urban-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#urban-content {
+    margin-top:77px;
+    color:#FFF;
+}
+
+/* -------- */
+
+
+
+/* End Faculties content */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start "SA" buttons */
+
+#sa-buttons {
+    background-color:#f1f1f1;
+    width:100%;
+    min-height:calc(100vh - 80px);
+    background:url('../imgs/cairo.JPG') no-repeat center center fixed;
+    background-size:cover;
+    position:relative;
+    z-index:0;
+}
+
+#sa-opacity {
+    padding-left:30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    background-color:rgba(0, 0, 0, .5);
+    position: absolute;
+    left:0;
+    bottom:0;
+    top:0;
+    right:0;
+    background-color:rgba(0, 0, 0, .5);
+    z-index:-1
+}
+
+
+.sa-left {
+    width:45%;
+    float: left;
+    margin-top:40px;
+}
+
+.sa-left > button {
+    width:100%;
+    padding:10px 15px;
+    margin-bottom: 15px;
+    background-color:rgba(128, 107, 107, 0.94);
+    border:none;
+    color:#FFF;
+    border-radius: 5px;
+}
+
+.sa-right {
+
+    width:45%;
+    float: right;
+    margin-top:40px;
+}
+
+
+.sa-right > button {
+    width:100%;
+    padding:10px 15px;
+    margin-bottom: 15px;
+    background-color:rgba(128, 107, 107, 0.94);
+    border:none;
+    color:#FFF;
+    border-radius: 5px;;
+}
+
+
+
+
+/* End "SA" buttons */
+
+
+
+
+/* Start "SA" Content */
+
+
+
+
+#enactus-content {
+    width:100%;
+    overflow:hidden;
+    background-color:#333;
+    direction:rtl;
+}
+
+#enactus-content header {
+    text-align:center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#enactus-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#enactus-content header #enactus-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#enactus-content p {
+
+    margin-top:100px;
+    color:#FFF;
+}
+
+
+
+
+
+
+
+
+
+#comet-content {
+    width:100%;
+    overflow:hidden;
+    background-color:#333;
+    direction:rtl;
+    
+}
+
+#comet-content header {
+    text-align: center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#comet-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#comet-content header #comet-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#comet-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+
+
+#tree-content {
+    width:100%;
+    background-color:#333;
+    overflow:hidden;
+    direction:rtl;
+}
+
+#tree-content header {
+    text-align:center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#tree-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#tree-content header #tree-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#tree-content p {
+    margin-top:100px;
+    color:#FFF;
+}
+
+
+
+
+
+
+
+
+#xproject-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+    
+}
+
+#xproject-content header {
+    text-align: center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#xproject-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#xproject-content header #xproject-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+
+#xproject-content p {
+    margin-top:100px;
+    color:#FFF;
+}
+
+
+
+
+
+
+
+
+#tshanj-content {
+    width:100%;
+    overflow:hidden;
+    background-color:#333;
+    direction:rtl;
+}
+
+#tshanj-content header {
+    text-align:center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#tshanj-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#tshanj-content header #tshanj-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#tshanj-content p {
+    margin-top:100px;
+    color:#FFF;
+}
+
+
+
+
+
+
+#stp-content {
+    width:100%;
+    overflow:hidden;
+    background-color:#333;
+    direction:rtl;
+}
+
+#stp-content header {
+    text-align:center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#stp-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#stp-content header #stp-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#stp-content p {
+    margin-top:100px;
+    color:#FFF;
+}
+
+
+
+
+
+
+#engbreak-content {
+    width:100%;
+    overflow:hidden;
+    background-color:#333;
+    direction :rtl;
+}
+
+#engbreak-content header {
+    text-align:center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#engbreak-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#engbreak-content header #engbreak-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#engbreak-content p {
+    margin-top:100px;
+    color:#fff;
+}
+
+
+
+
+
+#ieee-content {
+    width:100%;
+    overflow:hidden;
+    background-color:#333;
+    direction:rtl;
+}
+
+#ieee-content header {
+    text-align:center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#ieee-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#ieee-content header #ieee-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+
+#ieee-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+
+
+#fces-sc-content {
+    width:100%;
+    overflow:hidden;
+    background-color:#333;
+    direction:rtl;
+}
+
+#fces-sc-content header {
+    text-align:center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#fces-sc-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#fces-sc-content header #fces-sc-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+
+#fces-sc-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#map-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#map-content header {
+    text-align:center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#map-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#map-content header #map-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#map-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+
+
+
+
+#mese-content {
+    width:100%;
+    overflow:hidden;
+    background-color:#333;
+    direction:rtl;
+}
+
+#mese-content header {
+    text-align:center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#mese-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#mese-content header #mese-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+
+#mese-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+
+
+#moic-content {
+    width:100%;
+    overflow:hidden;
+    background-color:#333;
+    direction:rtl;
+}
+
+#moic-content header {
+    text-align:center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#moic-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#moic-content header #moic-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#moic-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+#sencro-content {
+    width:100%;
+    overflow:hidden;
+    background-color:#333;
+    direction:rtl;
+}
+
+#sencro-content header {
+    text-align:center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#sencro-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#sencro-content header #sencro-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+
+#sencro-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+
+
+#fekra-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#fekra-content header {
+    direction:ltr;
+    text-align:center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#fekra-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#fekra-content header #fekra-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#fekra-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+#aisec-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#aisec-content header {
+    text-align:center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#aisec-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#aisec-content header #aisec-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#aisec-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+
+#sahafa-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+
+}
+
+#sahafa-content header {
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#sahafa-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#sahafa-content header #sahafa-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#sahafa-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+#focus-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#focus-content header {
+    text-align:center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#focus-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#focus-content header #focus-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#focus-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+
+
+
+
+#mac-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+
+}
+
+#mac-content header {
+    text-align:center;
+    background-color:#4d1ad8;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#mac-content header h1 {
+    
+
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#mac-content header #mac-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#mac-content p {
+    color:#FFF;
+    margin-top:100px;
+}
+
+
+
+
+
+
+
+/* End "SA" Content */
+
+
+
+
+
+
+
+
+/* Start Facilities div and buttons */
+#facilities-buttons {
+    position:relative;
+    background: url('../imgs/cairo.JPG') no-repeat center center fixed;
+    background-size: cover;
+    width:100%;
+    min-height:calc(100vh - 80px);
+    z-index:0;
+
+}
+
+#facilities-opacity {
+    min-height:calc(100vh - 80px);
+    background-color:rgba(0, 0, 0, .5);
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+}
+
+
+
+#facilities-buttons button {
+    background-color:#333;
+    color:#FFF;
+    padding:10px 15px;
+    width:100%;
+    margin:20px auto;
+    background-color:rgba(128, 107, 107, 0.94);
+    border:none;
+    color:#FFF;
+    border-radius: 5px;
+}
+
+
+
+/* End Facilities div and buttons */
+
+
+
+
+
+
+
+/* Start facilities content */
+
+#facil1-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#facil1-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#facil1-content header h1 {
+    
+
+    font-size:20px;
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#facil1-content header #facil1-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#facil1-content p {
+
+    color:#FFF;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+#facil2-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#facil2-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#facil2-content header h1 {
+    
+
+    font-size:20px;
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#facil2-content header #facil2-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#facil2-content p {
+
+    color:#FFF;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+#facil3-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#facil3-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#facil3-content header h1 {
+    
+    font-size:20px;
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#facil3-content header #facil3-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#facil3-content p {
+
+    color:#FFF;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+#facil4-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#facil4-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#facil4-content header h1 {
+    
+    font-size:17px;
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#facil4-content header #facil4-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#facil4-content p {
+
+    color:#FFF;
+    margin-top: 100px;
+}
+
+
+
+
+
+#facil5-content {
+    width:100%;
+    overflow:hidden;
+    direction:rtl;
+    background-color:#333;
+}
+
+#facil5-content header {
+    text-align:center;
+    background-color:#205add;
+    color:#FFF;
+    width:100%;
+    margin:0 auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top:20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px  #000000;
+}
+
+#facil5-content header h1 {
+    
+    font-size:20px;
+    display: inline;
+    margin:10px auto;
+    
+}
+
+
+#facil5-content header #facil5-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-5px;
+}
+
+#facil5-content p {
+
+    color:#FFF;
+    margin-top: 100px;
+}
+
+
+
+/* End facilities content */
+
+
+
+
+
+
+
+
+
+/* ==================================================================================================================== */
+/* ==================================================================================================================== */
+/* ==================================================================================================================== */
+/* ==================================================================================================================== */
+
+
+/* Start Restuarnts buttons */
+
+#rest-buttons {
+    position:relative;
+    background: url('../imgs/cairo.JPG') no-repeat center center fixed;
+    background-size: cover;
+    width:100%;
+    min-height:calc(100vh - 80px);
+    z-index:0;
+
+}
+
+#rest-opacity {
+    min-height:calc(100vh - 80px);
+    background-color:rgba(0, 0, 0, .5);
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+}
+
+#rest-buttons #rest-zayed {
+    color:#FFF;
+    width:90%;
+    margin:30px auto;
+    text-align:center;
+}
+
+#rest-buttons #rest-zayed h4 {
+    background-color:rgba(181, 143, 219, 0.49);
+    border: 1px solid rgba(181, 143, 219, 0.67);
+    width:80%;
+    margin:0 auto;
+    border-radius:10px;
+    color:#FFF;
+    text-align: center;
+    padding:10px 0;
+}
+
+#rest-buttons h4 {
+    background-color:rgba(181, 143, 219, 0.49);
+    border: 1px solid rgba(181, 143, 219, 0.67);
+    width:80%;
+    margin:0 auto;
+    border-radius:10px;
+    color:#FFF;
+    text-align: center;
+    padding:10px 0;
+}
+
+
+#rest-buttons #teba-button {
+    color:#FFF;
+    border:none;
+    border-radius:5px;
+    background-color:rgba(128, 107, 107, 0.94);
+    width:40%;
+    float:left;
+    padding:10px 0px;
+    margin:20px auto;
+}
+
+
+#rest-buttons #safwa-button {
+    color:#FFF;
+    border:none;
+    border-radius:5px;
+    background-color:rgba(128, 107, 107, 0.94);
+    width:40%;
+    float:right;
+    padding:10px 0px;
+    margin:20px auto;
+}
+
+
+#rest-buttons #horus-button {
+    color:#FFF;
+    border:none;
+    border-radius:5px;
+    background-color:rgba(128, 107, 107, 0.94);
+    width:40%;
+    float:left;
+    padding:10px 0px;
+    margin:20px auto;
+}
+
+
+
+/* End Restuarnts buttons */
+
+
+
+
+
+
+/* Start Restuarnts Content */
+
+#teba-content {
+    color:#FFF;
+    background-color:#333;
+    height:100%;
+}
+
+#teba-content  header {
+    text-align:center;
+    padding-top:20px;
+    background-color:#692599;
+    color:#FFF;
+    width:100%;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    box-shadow:0 0 10px #000;
+
+}
+
+#teba-content  header input {
+    width:35%;
+    float:right;
+    text-align:center;
+    border:none;
+    color:#333;
+    margin-top:-20px;
+    padding-bottom:10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+
+
+#teba-content  header #teba-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-25px;
+    margin-left:10px;
+}
+
+#teba-content  header section {
+    width:100%;
+    background-color:#692599;
+    margin:35px auto;
+}
+
+#teba-content  header section button {
+    width:33.3%;
+    color:#FFF;
+    background-color:#692599;
+    margin:0px auto;
+    padding-top:5px;
+    border:none;
+}
+
+#teba-content header h1 {
+    color:#FFF;
+    background-color:#a2a2a2;
+	margin-top:-20px;
+    float:right;
+    width:27%;
+    font-size:30px;
+	border-bottom-left-radius: 10px;
+}
+
+
+
+
+
+
+
+#teba-sandwich-content {             
+    padding-top:80px;
+    height:100%;
+    transition:all 4s ease-in-out;
+}
+
+#teba-sandwich-content h2 {
+    text-align:center;
+    background-color:#692599;
+    width:50%;
+    margin:0 auto;
+    border-radius:10px;
+}
+
+#teba-sandwich-content p {
+    text-align:center;
+}
+
+
+
+#teba-sandwich-content  #sandwichs {
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:0 auto;
+}
+
+#teba-sandwich-content  #sandwichs h4 {
+    color:#FFF;
+    background-color:#692599;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+#teba-sandwich-content  #sandwichs p {
+    width:90%;
+    float:right;
+}
+
+#teba-sandwich-content  #sandwichs ul {
+    width:10%;
+    color:#fff;
+    background-color:#333;
+}
+
+
+
+
+
+#teba-sandwich-content #teba-meat-sandwichs {
+    width:90%;
+    margin:40px auto;
+    background-color:#FFF;
+    color:#333;
+}
+
+#teba-sandwich-content  #teba-meat-sandwichs h4 {
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+
+#teba-sandwich-content  #teba-meat-sandwichs p {
+
+    width:35%;
+    float:right;
+}
+
+#teba-sandwich-content  #teba-meat-sandwichs ul {
+    width:23%;
+    text-align:center;
+    background-color:#333;
+    color:#FFF;
+    float:left;
+    margin-left:10px;
+    overflow:hidden;
+}
+
+#teba-sandwich-content  #teba-meat-sandwichs span {
+    width:100%;
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    float:right;
+    padding:0 15px;
+}
+
+
+
+
+
+
+
+
+/* Chicken */
+
+
+
+
+
+#teba-sandwich-content  #teba-chicken-sandwichs {
+    width:90%;
+    margin:40px auto;
+    background-color:#FFF;
+    color:#333;
+}
+
+#teba-sandwich-content  #teba-chicken-sandwichs h4 {
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+
+
+#teba-sandwich-content  #teba-chicken-sandwichs p {
+
+    width:35%;
+    float:right;
+}
+
+#teba-sandwich-content #teba-chicken-sandwichs ul {
+    width:23%;
+    text-align:center;
+    background-color:#333;
+    color:#FFF;
+    float:left;
+    margin-left:10px;
+    overflow:hidden;
+}
+
+#teba-sandwich-content  #teba-chicken-sandwichs span {
+    width:100%;
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    float:right;
+    padding:0 15px;
+}
+
+
+/* منوعاااااات */
+
+
+#teba-sandwich-content  #teba-miscellaneous {
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:40px auto;
+}
+
+#teba-sandwich-content  #teba-miscellaneous h4 {
+    color:#FFF;
+    background-color:#692599;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+#teba-sandwich-content  #teba-miscellaneous p {
+    width:90%;
+    float:right;
+    
+}
+
+#teba-sandwich-content #teba-miscellaneous ul {
+    width:10%;
+    color:#fff;
+    background-color:#333;
+}
+
+
+
+
+
+
+
+
+/* Sory */
+
+#teba-sandwich-content  #teba-sory {
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:40px auto;
+}
+
+#teba-sandwich-content  #teba-sory h4 {
+    color:#FFF;
+    background-color:#692599;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+#teba-sandwich-content  #teba-sory p {
+    width:90%;
+    float:right;
+    
+}
+
+#teba-sandwich-content  #teba-sory ul {
+    width:10%;
+    color:#fff;
+    background-color:#333;
+}
+
+
+
+/* creb */
+
+#teba-sandwich-content  #teba-creb {
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:40px auto;
+}
+
+#teba-sandwich-content  #teba-creb h4 {
+    color:#FFF;
+    background-color:#692599;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+#teba-sandwich-content  #teba-creb p {
+    width:90%;
+    float:right;
+    
+}
+
+#teba-sandwich-content  #teba-creb ul {
+    width:10%;
+    color:#fff;
+    background-color:#333;
+}
+
+
+
+/* sha3biat */
+
+#teba-sandwich-content  #teba-sha3biat {
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:40px auto;
+}
+
+#teba-sandwich-content  #teba-sha3biat h4 {
+    color:#FFF;
+    background-color:#692599;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+#teba-sandwich-content  #teba-sha3biat p {
+    width:90%;
+    float:right;
+    
+}
+
+#teba-sandwich-content  #teba-sha3biat ul {
+    width:10%;
+    color:#fff;
+    background-color:#333;
+}
+
+
+
+
+/* teba pizza */
+
+#teba-pizza-content h1 {
+    text-align:center;
+    font-size:35px;
+    padding-top:20px;
+    color:#F00;
+}
+
+#teba-pizza-content h2 {
+    text-align:center;
+    background-color:#692599;
+    width:50%;
+    margin:0 auto;
+    border-radius:10px;
+}
+
+#teba-pizza-content p {
+    text-align:center;
+}
+
+#teba-pizza-content  #teba-pizzas {
+    width:90%;
+    margin:40px auto;
+    background-color:#FFF;
+    color:#333;
+}
+
+#teba-pizza-content  #teba-pizzas h4 {
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+
+
+#teba-pizza-content  #teba-pizzas p {
+
+    margin-right:5px;
+    float:right;
+}
+
+#teba-pizza-content #teba-pizzas ul {
+    width:28%;
+    text-align:center;
+    background-color:#333;
+    color:#FFF;
+    float:left;
+    margin-left:10px;
+    overflow:hidden;
+}
+
+#teba-pizza-content  #teba-pizzas span {
+    width:100%;
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    float:right;
+    padding:0 15px;
+}
+
+
+/* end teba pizza */
+
+
+
+
+
+/* Start teba macron */
+
+#teba-macron-content h1 {
+    text-align:center;
+    font-size:35px;
+    padding-top:20px;
+    color:#F00;
+}
+
+#teba-macron-content h2 {
+    text-align:center;
+    background-color:#692599;
+    width:50%;
+    margin:0 auto;
+    border-radius:10px;
+}
+
+#teba-macron-content p {
+    text-align:center;
+}
+
+
+#teba-macron-content #teba-tagen {
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:40px auto;
+}
+
+#teba-macron-content  #teba-tagen h4 {
+    width:100%;
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+
+
+#teba-macron-content  #teba-tagen p {
+
+    margin-right:5px;
+    float:right;
+}
+
+#teba-macron-content #teba-tagen ul {
+    width:28%;
+    text-align:center;
+    background-color:#333;
+    color:#FFF;
+    float:left;
+    margin-left:10px;
+    overflow:hidden;
+}
+
+
+#teba-macron-content  #teba-rise {
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:40px auto;
+}
+
+
+
+
+#teba-macron-content  #teba-rise h4 {
+    background-color:#692599;
+    color:#FFF;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+
+#teba-macron-content  #teba-rise p {
+
+    width:90%;
+    margin-right:5px;
+    float:right;
+}
+
+#teba-macron-content #teba-rise ul {
+    width:10%;
+    text-align:center;
+    background-color:#333;
+    color:#FFF;
+    float:left;
+    margin-left:10px;
+    overflow:hidden;
+}
+
+
+
+
+#teba-price-holder {
+    min-height:calc(100vh - 81px);
+}
+
+
+#teba-content article {
+    display:none;
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:82px auto;
+}
+
+
+
+#teba-content  article  h4 {
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+
+
+#teba-content  article p {
+
+    width:35%;
+    float:right;
+}
+
+#teba-content  article ul {
+    width:23%;
+    text-align:center;
+    background-color:#333;
+    color:#FFF;
+    float:left;
+    margin-left:10px;
+    overflow:hidden;
+}
+
+#teba-content  article span {
+    width:100%;
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    float:right;
+    padding:0 15px;
+}
+
+
+
+
+
+
+
+
+
+/* end teba macron */
+
+
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------- */
+
+
+
+
+/* Start Safwa */
+
+#safwa-content {
+
+    color:#FFF;
+    background-color:#333;
+    height:100%;    
+}
+
+#safwa-content  header {
+    text-align:center;
+    padding-top:20px;
+    background-color:#692599;
+    color:#FFF;
+    width:100%;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    box-shadow:0 0 10px #000;
+
+}
+
+#safwa-content  header input {
+    width:35%;
+    float:right;
+    text-align:center;
+    border:none;
+    color:#333;
+    margin-top:-20px;
+    padding-bottom:10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+
+
+#safwa-content  header #safwa-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-20px;
+    margin-left:10px;
+}
+
+#safwa-content  header section {
+    width:100%;
+    background-color:#692599;
+    margin:35px auto;
+}
+
+#safwa-content  header section button {
+    width:33.3%;
+    color:#FFF;
+    background-color:#692599;
+    margin:0px auto;
+    padding-top:10px;
+    border:none;
+}
+
+#safwa-content header h1 {
+    color:#FFF;
+    background-color:#a2a2a2;
+	margin-top:-20px;
+    float:right;
+    width:40%;
+    font-size:30px;
+	border-bottom-left-radius: 10px;
+}
+
+
+
+
+
+
+
+#safwa-sandwich-content {             
+    padding-top:80px;
+    height:100%;
+}
+
+
+
+
+#safwa-sandwich-content  #safwa-sandwichs {
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:0 auto;
+}
+
+#safwa-sandwich-content  #safwa-sandwichs h4 {
+    color:#FFF;
+    background-color:#692599;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+#safwa-sandwich-content  #safwa-sandwichs p {
+    width:90%;
+    float:right;
+    
+}
+
+#safwa-sandwich-content  #safwa-sandwichs ul {
+    width:10%;
+    color:#fff;
+    background-color:#333;
+}
+
+
+
+
+
+#safwa-sandwich-content #safwa-meat-sandwichs {
+    width:90%;
+    margin:40px auto;
+    background-color:#FFF;
+    color:#333;
+}
+
+#safwa-sandwich-content  #safwa-meat-sandwichs h4 {
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+
+#safwa-sandwich-content  #safwa-meat-sandwichs p {
+
+    width:35%;
+    float:right;
+}
+
+#safwa-sandwich-content  #safwa-meat-sandwichs ul {
+    width:23%;
+    text-align:center;
+    background-color:#333;
+    color:#FFF;
+    float:left;
+    margin-left:10px;
+    overflow:hidden;
+}
+
+#safwa-sandwich-content  #safwa-meat-sandwichs span {
+    width:100%;
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    float:right;
+    padding:0 15px;
+}
+
+
+
+
+
+
+
+
+/* Chicken */
+
+
+
+
+
+#safwa-sandwich-content  #safwa-chicken-sandwichs {
+    width:90%;
+    margin:40px auto;
+    background-color:#FFF;
+    color:#333;
+}
+
+#safwa-sandwich-content  #safwa-chicken-sandwichs h4 {
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+
+
+#safwa-sandwich-content  #safwa-chicken-sandwichs p {
+
+    width:35%;
+    float:right;
+}
+
+#safwa-sandwich-content #safwa-chicken-sandwichs ul {
+    width:23%;
+    text-align:center;
+    background-color:#333;
+    color:#FFF;
+    float:left;
+    margin-left:10px;
+    overflow:hidden;
+}
+
+#safwa-sandwich-content  #safwa-chicken-sandwichs span {
+    width:100%;
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    float:right;
+    padding:0 15px;
+}
+
+
+/* منوعاااااات */
+
+
+#safwa-sandwich-content  #safwa-miscellaneous {
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:40px auto;
+}
+
+#safwa-sandwich-content  #safwa-miscellaneous h4 {
+    color:#FFF;
+    background-color:#692599;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+#safwa-sandwich-content  #safwa-miscellaneous p {
+    width:90%;
+    float:right;
+    
+}
+
+#safwa-sandwich-content #safwa-miscellaneous ul {
+    width:10%;
+    color:#fff;
+    background-color:#333;
+}
+
+
+
+
+
+
+
+
+/* Sory */
+
+#safwa-sandwich-content  #safwa-sory {
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:40px auto;
+}
+
+#safwa-sandwich-content  #safwa-sory h4 {
+    color:#FFF;
+    background-color:#692599;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+#safwa-sandwich-content  #safwa-sory p {
+    width:90%;
+    float:right;
+    
+}
+
+#safwa-sandwich-content  #safwa-sory ul {
+    width:10%;
+    color:#fff;
+    background-color:#333;
+}
+
+
+
+/* creb */
+
+#safwa-sandwich-content  #safwa-creb {
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:40px auto;
+}
+
+#safwa-sandwich-content  #safwa-creb h4 {
+    color:#FFF;
+    background-color:#692599;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+#safwa-sandwich-content  #safwa-creb p {
+    width:90%;
+    float:right;
+    
+}
+
+#safwa-sandwich-content  #safwa-creb ul {
+    width:10%;
+    color:#fff;
+    background-color:#333;
+}
+
+
+
+/* sha3biat */
+
+#safwa-sandwich-content  #safwa-sha3biat {
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:40px auto;
+}
+
+#safwa-sandwich-content  #safwa-sha3biat h4 {
+    color:#FFF;
+    background-color:#692599;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+#safwa-sandwich-content  #safwa-sha3biat p {
+    width:90%;
+    float:right;
+    
+}
+
+#safwa-sandwich-content  #safwa-sha3biat ul {
+    width:10%;
+    color:#fff;
+    background-color:#333;
+}
+
+
+
+
+/* teba pizza */
+
+#safwa-pizza-content h1 {
+    text-align:center;
+    font-size:35px;
+    padding-top:20px;
+    color:#F00;
+}
+
+#safwa-pizza-content  #safwa-pizzas {
+    width:90%;
+    margin:40px auto;
+    background-color:#FFF;
+    color:#333;
+}
+
+#safwa-pizza-content  #safwa-pizzas h4 {
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+
+
+#safwa-pizza-content  #safwa-pizzas p {
+
+    margin-right:5px;
+    float:right;
+}
+
+#safwa-pizza-content #safwa-pizzas ul {
+    width:28%;
+    text-align:center;
+    background-color:#333;
+    color:#FFF;
+    float:left;
+    margin-left:10px;
+    overflow:hidden;
+}
+
+#safwa-pizza-content  #safwa-pizzas span {
+    width:100%;
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    float:right;
+    padding:0 15px;
+}
+
+
+/* end teba pizza */
+
+
+
+
+
+/* Start teba macron */
+
+#safwa-macron-content h1 {
+    text-align:center;
+    font-size:35px;
+    padding-top:20px;
+    color:#F00;
+}
+
+
+
+#safwa-macron-content #safwa-tagen {
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:40px auto;
+}
+
+#safwa-macron-content  #safwa-tagen h4 {
+    width:100%;
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+
+
+#safwa-macron-content  #safwa-tagen p {
+
+    margin-right:5px;
+    float:right;
+}
+
+#safwa-macron-content #safwa-tagen ul {
+    width:28%;
+    text-align:center;
+    background-color:#333;
+    color:#FFF;
+    float:left;
+    margin-left:10px;
+    overflow:hidden;
+}
+
+
+#safwa-macron-content  #safwa-rise {
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:40px auto;
+}
+
+
+
+
+#safwa-macron-content  #safwa-rise h4 {
+    background-color:#692599;
+    color:#FFF;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+
+#safwa-macron-content  #safwa-rise p {
+
+    width:90%;
+    margin-right:5px;
+    float:right;
+}
+
+#safwa-macron-content #safwa-rise ul {
+    width:10%;
+    text-align:center;
+    background-color:#333;
+    color:#FFF;
+    float:left;
+    margin-left:10px;
+    overflow:hidden;
+}
+
+
+#safwa-price-holder {
+    min-height:calc(100vh - 81px);
+}
+
+
+#safwa-content article {
+    display:none;
+    color:#333;
+    text-align:center;
+    background-color:#FFF;
+    width:90%;
+    margin:82px auto;
+}
+
+
+
+#safwa-content  article  h4 {
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+
+
+#safwa-content  article p {
+
+    width:35%;
+    float:right;
+}
+
+#safwa-content  article ul {
+    width:23%;
+    text-align:center;
+    background-color:#333;
+    color:#FFF;
+    float:left;
+    margin-left:10px;
+    overflow:hidden;
+}
+
+#safwa-content  article span {
+    width:100%;
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    float:right;
+    padding:0 15px;
+}
+
+
+
+
+/* END sAfwa */
+
+ 
+
+
+
+/* ------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------*/
+/* ---------------------------------Cairo Restaurants----------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+#horus-content {
+    display:none;
+    color:#FFF;
+    background-color:#333;
+    height:100%;
+}
+
+#horus-content  header {
+    text-align:center;
+    padding-top:20px;
+    background-color:#692599;
+    color:#FFF;
+    width:100%;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    box-shadow:0 0 10px #000;
+
+}
+
+#horus-content  header input {
+    width:35%;
+    float:right;
+    text-align:center;
+    border:none;
+    color:#333;
+    margin-top:-20px;
+    padding-bottom:10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+
+
+#horus-content  header #horus-back {
+    float:left;
+    width:10%;
+    background:none;
+    border:none;
+    margin-top:-25px;
+    margin-left:10px;
+    color:#FFF;
+}
+
+#horus-content  header section {
+    width:100%;
+    background-color:#692599;
+    margin:35px auto;
+}
+
+#horus-content  header section button {
+    width:33.33333%;
+    color:#FFF;
+    background-color:#692599;
+    margin:0px auto;
+    padding-top:5px;
+    border:none;
+}
+
+#horus-content header h1 {
+    color:#FFF;
+    background-color:#a2a2a2;
+	margin-top:-20px;
+    float:right;
+    width:27%;
+    font-size:30px;
+	border-bottom-left-radius: 10px;
+}
+
+
+#horus-sandwich-content  div {
+    background-color:#FFF;
+    width:90%;
+    margin:40px auto;
+    color:#333;
+    
+}
+
+#horus-sandwich-content   h4 {
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+#horus-sandwich-content  p {
+    width:33.33333%;
+    float:right;
+
+}
+
+#horus-sandwich-content  ul {
+    width:23%;
+    text-align:center;
+    background-color:#333;
+    color:#FFF;
+    float:left;
+    margin-left:10px;
+    overflow:hidden;
+}
+
+#horus-sandwich-content   span {
+    width:100%;
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    float:right;
+    padding:0 15px;
+}
+
+
+#horus-pizza-content {
+    display:none;
+}
+
+#horus-pizza-content  div {
+    background-color:#FFF;
+    width:90%;
+    margin:40px auto;
+    color:#333;
+}
+
+#horus-pizza-content   h4 {
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+#horus-pizza-content  p {
+    width:50%;
+    float:right;
+
+}
+
+#horus-pizza-content  ul {
+    width:23%;
+    text-align:center;
+    background-color:#333;
+    color:#FFF;
+    float:left;
+    margin-left:10px;
+    overflow:hidden;
+}
+
+#horus-pizza-content   span {
+    width:100%;
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    float:right;
+    padding:0 15px;
+}
+
+#horus-drinks-content {
+    display:none;
+}
+
+#horus-drinks-content  div {
+    background-color:#FFF;
+    width:90%;
+    margin:40px auto;
+    color:#333;
+    
+}
+
+#horus-drinks-content   h4 {
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    box-shadow: 0 0 10px  #000000;
+}
+
+
+#horus-drinks-content  p {
+    width:45%;
+    text-align:center;
+    float:right;
+
+}
+
+#horus-drinks-content  ul {
+    width:23%;
+    text-align:center;
+    background-color:#333;
+    color:#FFF;
+    float:left;
+    margin-left:10px;
+    overflow:hidden;
+}
+
+#horus-drinks-content   span {
+    width:100%;
+    background-color:#692599;
+    color:#FFF;
+    text-align:center;
+    float:right;
+    padding:0 15px;
+}
